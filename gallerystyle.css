@@ -1,0 +1,105 @@
+body { 
+font-family: Arial, sans-serif; 
+margin: 0; 
+padding: 0; 
+background-color: #f4f4f4;
+text-align: center;
+color: orange;
+min-height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url("pexels-artempodrez-7232830.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;	 
+} 
+
+.gallery-container { 
+display: flex; 
+flex-wrap: wrap; 
+justify-content: center; 
+padding: 20px; background-color: #fff; 
+} 
+
+.gallery-item { 
+flex: 1 1 calc(33.333% - 40px); 
+margin: 10px; 
+box-sizing: border-box; 
+border: 1px solid gray; 
+padding: 10px; 
+background-color: orange; 
+text-align: center; 
+} 
+
+.gallery-item img { 
+max-width: 100%; 
+height: auto; 
+display: block; 
+margin: 0 auto;
+} 
+
+p{
+font-family: arial;
+color: black;
+}
+
+@media (max-width: 768px) { 
+	.gallery-item { 
+		flex: 1 1 calc(50% - 40px);
+	}
+} 
+
+@media (max-width: 480px) { 
+	.gallery-item { 
+		flex: 1 1 100%;} 
+}
+.footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	padding: 40px 0;
+	background-color: black;
+}
+.footer .social{
+	text-align: center;
+	padding-bottom: 25px;
+	color: white;
+}
+.footer .social a{
+	font-size: 24px;
+	color: white;
+	border: 2px solid orange;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 8px;
+	box-shadow: inset 0 0 10px orange, 0 0 10px orange;
+	transition: 0.3s ease;
+}
+.footer ul{
+	margin-top: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
+	text-align: center;
+}
+.footer ul li a{
+	color: white;
+	border-bottom: 3px solid transparent;
+	transition: 0.3s ease;
+}
+.footer ul li a:hover{
+	border-bottom: 3px solid orange;
+}
+.footer ul li{
+	display: inline-block;
+	padding: 0 15px;
+}
+.footer .copyright{
+	margin-top: 15px;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+}
